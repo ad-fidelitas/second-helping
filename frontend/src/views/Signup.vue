@@ -1,14 +1,9 @@
 <template>
-    <v-app>
-        <v-content class="mx-4 mb-4">
-            <router-view></router-view>
-        </v-content>
-    </v-app>
+    <h1>This is the signup page</h1>
 </template>
 
 <script>
     export default {
-        name: "App",
         data() {
             return {
                 //
@@ -16,3 +11,4 @@
         }
     };
 </script>
+
