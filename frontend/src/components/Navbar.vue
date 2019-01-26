@@ -1,14 +1,11 @@
 <template>
-    <v-app>
-        <v-content class="mx-4 mb-4">
-            <router-view></router-view>
-        </v-content>
-    </v-app>
+    <v-container>
+        <!--  -->
+    </v-container>
 </template>
 
 <script>
     export default {
-        name: "App",
         data() {
             return {
                 //
@@ -16,3 +13,6 @@
         }
     };
 </script>
+
+<style>
+</style>
