@@ -8,6 +8,8 @@ import cookieParser from 'cookie-parser';
 import swaggerify from './swagger';
 import l from './logger';
 
+import mongoose = require("mongoose");
+
 const app = express();
 
 export default class ExpressServer {
@@ -22,6 +24,13 @@ export default class ExpressServer {
 
   router(routes: (app: Application) => void): ExpressServer {
     swaggerify(app, routes);
+    return this;
+  }
+  
+  database() {
+    mongoose.connect("mongodb://localhost/conu", { useNewUrlParser: true })
+    .on("error", console.log("There was an error connecting to the databse"));
+
     return this;
   }
 

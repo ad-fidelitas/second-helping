@@ -1,7 +1,10 @@
 import { IPathService } from "../../../interfaces/IPathService";
+import { IGraphService } from "../../../interfaces/IGraphService";
 
-export const PathService: () => IPathService =
-() => {
+import Graph = require("node-graph");
+
+export const PathService: (IGraphService) => IPathService =
+(graphService: IGraphService) => {
     // private functions here
 
     // public functions in the return module 

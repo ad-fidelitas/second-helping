@@ -2,7 +2,6 @@ import { Inventory, IInventoryModel } from "../models/Inventory";
 import { IInventory } from "../../../../interfaces/IInventory";
 import { IRessourceDatabase } from "../../../../interfaces/IRessourceDatabase";
 
-Inventory.findBydfslkj("dslkfjdsfl");
 export const InventoryDatabase: () => IRessourceDatabase<IInventory> = 
 () => {
     return ({
