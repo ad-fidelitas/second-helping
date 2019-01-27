@@ -4,7 +4,7 @@ import { Request, Response, Router } from 'express';
 import { IDatabase } from "../../interfaces/IDatabase";
 import { IInventory } from "../../interfaces/IInventory";
 
-export const InventoryController: (IDatabase) => Router =
+export const InventoryController: (db: IDatabase) => Router =
 (db: IDatabase) => {
     const router: Router = Router();
 
