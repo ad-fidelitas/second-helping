@@ -3,6 +3,10 @@ import Router from "vue-router";
 import Login from "./views/Login.vue";
 import Signup from "./views/Signup.vue";
 import Home from "./views/Home.vue";
+import About from "./views/About.vue";
+import map from "@/components/map.vue";
+
+
 
 Vue.use(Router);
 
@@ -32,8 +36,12 @@ export default new Router({
         {
             path: "/about",
             name: "about",
-            component: () =>
-                import(/* webpackChunkName: "about" */ "./views/About.vue")
+            component: About
+        },
+        {
+            path: "/map", 
+            name: "map", 
+            component: map
         }
     ]
 });
